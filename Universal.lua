@@ -976,18 +976,7 @@ TextLabel_16.TextScaled = true
 TextLabel_16.TextSize = 14
 TextLabel_16.TextWrapped = true
 
-local loader = localPlayer.PlayerGui:FindFirstChild("Loader")
-if loader and loader:FindFirstChild("LoadingFrame") then
-	wait(5)
-    loader.LoadingFrame.Visible = false
-else
-    warn("BBBhub: no loader found to delete.")
-    game:GetService("StarterGui"):SetCore("SendNotification", {
-        Title = "BBBhub",
-        Text = "Loader not found, but hub will still work.",
-        Duration = 3,
-    })
-end
+
 
 local function setToggle(btn, state)
     if state then
