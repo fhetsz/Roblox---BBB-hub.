@@ -1,4 +1,6 @@
-# Roblox---BBB-hub.
-it is a roblox hub, it currently doesnt have anything but im gonna add universal then other stuff.
+# Roblox - BBB hub.
 
-its gonna be 100% open source.
+current games:
+Universal.
+
+100% open source.
