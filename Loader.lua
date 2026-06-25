@@ -267,7 +267,7 @@ local function load()
 	LoadingFrame.Visible = true
 end
 local function keysystem()
-	KeySystem.Visible = false -- no logic to keysystem added yet.
+	KeySystem.Visible = true -- no logic to keysystem added yet.
 end
 
 if gameid == 0 then
