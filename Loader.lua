@@ -279,3 +279,9 @@ else
 	print("loading universal")
 	load()
 end
+
+while LoadingFrame.Visible == true do
+	if game.Players.LocalPlayer.PlayerGui:FindFirstChild("BBBhub") then
+	LoadingFrame.Visible = false
+	wait(2.5)	
+end
