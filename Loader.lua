@@ -280,8 +280,20 @@ else
 	load()
 end
 
-while LoadingFrame.Visible == true do
-	if game.Players.LocalPlayer.PlayerGui:FindFirstChild("BBBhub") then
-	LoadingFrame.Visible = false
-	wait(2.5)	
+while LoadingFrame.Visible do
+	local gui = game.Players.LocalPlayer.PlayerGui:FindFirstChild("BBBhub")
+
+	if gui then
+		LoadingFrame.Visible = false
+		task.wait(2.5)
+		break
+	else
+		warn("BBB hub: no loader found to delete.")
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "BBBhub",
+			Text = "Loader not found, but hub will still work.",
+			Duration = 3,
+		})
+		task.wait(2.5)
+	end
 end
